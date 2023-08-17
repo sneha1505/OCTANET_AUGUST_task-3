@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Hello this is my first web page!." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="home.css" />
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <nav class="navbar">
+                  <div class="navbar__brand">
+                    <img
+                      src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
+                      alt="logo"
+                      class="brand__logo"
+                    />
+                  </div>
+                </nav>
+                </header>
+          </div>
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="friends-logo1.jpg" width="1500" height="600">
+              <div class="text"></div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="img2.jpg" width="1500" height="600">
+              <div class="text"></div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="img3.jpg" width="1500" height="600">
+              <div class="text"></div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+          <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+            
+        <section>
+          <h1 class="title">Recommended For You</h1>
+    <div class="movies-list">
+      <button class="pre-btn" title="btn"><img src="images/pre.png" alt="" /></button>
+      <button class="nxt-btn" title="btn"><img src="images/nxt.png" alt="" /></button>
+      <div class="card-container">
+        <div class="card">
+          <img src="1.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">MONEY HEIST</h2>
+            <h6 class="des">Robbery with perfection</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="2.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Breaking Bad</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="3.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">KOHRRA</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="4.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">The Witcher</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="5.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">MANIFEST</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="6.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">13 Reasons Why</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="7.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">DELHI CRIME</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="8.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Designated Survivor</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="9.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">SEX EDUCATION</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="10.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">ALICE IN BORDERLAND</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="11.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">EMILY IN PARIS</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="12.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">ELITE</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<h1 class="title">Popular Shows</h1>
+<div class="movies-list">
+<button class="pre-btn" title="btn"><img src="images/pre.png" alt=""></button>
+<button class="nxt-btn" title="btn"><img src="images/nxt.png" alt=""></button>
+<div class="card-container">
+<div class="card">
+<img src="1a.jpg" class="card-img" alt="">
+<div class="card-body">
+    <h2 class="name">THE GLORY</h2>
+    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+    <button class="watchlist-btn">Add to Watchlist</button>
+</div>
+</div>
+<div class="card">
+    <img src="2a.jpg" class="card-img" alt="">
+    <div class="card-body">
+        <h2 class="name">DARK DESIRE</h2>
+        <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+        <button class="watchlist-btn">Add to Watchlist</button>
+    </div>
+    </div>
+    <div class="card">
+        <img src="3a.jpg" class="card-img" alt="">
+        <div class="card-body">
+            <h2 class="name">ARCOS</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">Add to Watchlist</button>
+        </div>
+        </div>
+        <div class="card">
+            <img src="4a.jpg" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">DOOM AT YOUR SERVICE</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                <button class="watchlist-btn">Add to Watchlist</button>
+            </div>
+            </div>
+            <div class="card">
+                <img src="5a.jpg" class="card-img" alt="">
+                <div class="card-body">
+                    <h2 class="name">LOST IN SPACE</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+                </div>
+                <div class="card">
+                    <img src="6a.jpg" class="card-img" alt="">
+                    <div class="card-body">
+                        <h2 class="name">DYNASTY</h2>
+                        <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                        <button class="watchlist-btn">Add to Watchlist</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <img src="7a.jpg" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">THE QUEEN'S GAMBIT</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">Add to Watchlist</button>
+                        </div>
+                        </div>
+                        <div class="card">
+                            <img src="8a.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">DARK</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">Add to Watchlist</button>
+                            </div>
+                            </div>
+                            <div class="card">
+                                <img src="9a.jpg" class="card-img" alt="">
+                                <div class="card-body">
+                                    <h2 class="name">CLASS</h2>
+                                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                    <button class="watchlist-btn">Add to Watchlist</button>
+                                </div>
+                                </div>
+                                <div class="card">
+                                    <img src="10a.jpg" class="card-img" alt="">
+                                    <div class="card-body">
+                                        <h2 class="name">THE LAST KINGDOM </h2>
+                                        <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                        <button class="watchlist-btn">Add to Watchlist</button>
+                                    </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="11a.jpg" class="card-img" alt="">
+                                        <div class="card-body">
+                                            <h2 class="name">1899</h2>
+                                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <button class="watchlist-btn">Add to Watchlist</button>
+                                        </div>
+                                        </div>
+                                        <div class="card">
+                                            <img src="12a.jpg" class="card-img" alt="">
+                                            <div class="card-body">
+                                                <h2 class="name">ARANYAK</h2>
+                                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                                <button class="watchlist-btn">Add to Watchlist</button>
+                                            </div>
+                                            </div>
+
+        </section>
+    </body>
+</html>
